@@ -1,11 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Home | WDD 231 | Byaruhanga Arthur</title>
+
+    <meta name="description" content="Course home page for Byaruhanga Arthur in WDD 231 - Dynamic Web Fundamentals.">
+    <meta name="author" content="Byaruhanga Arthur">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
 
+    <header>
+
+        <div class="logo">
+            <img src="images/logo.svg" alt="Website Logo" width="50" height="50">
+            <span>Byaruhanga Arthur</span>
+        </div>
+
+        <button id="menuButton" aria-label="Open Navigation Menu">
+            &#9776;
+        </button>
+
+        <nav id="navMenu">
+            <a href="index.html" class="active">Home</a>
+            <a href="chamber/index.html">Chamber</a>
+            <a href="final/index.html">Final</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Home</h1>
+
+        <div class="home-grid">
+
+            <section class="card">
+                <h2>About Me</h2>
+
+                <p>
+                    Hello! My name is <strong>Byaruhanga Arthur</strong>. I am a student in
+                    WDD 231: Dynamic Web Fundamentals through BYU–Idaho. I enjoy web
+                    development, programming, and learning new technologies.
+                </p>
+
+                <p>
+                    This website will showcase my coursework and projects completed
+                    throughout this course.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2>Student Photo</h2>
+
+                <img src="/images/my profile.webp" alt="Photo of Byaruhanga Arthur" class="profile">
+            </section>
+
+            <section class="card certificate">
+
+                <h2>Web &amp; Computer Programming Certificate</h2>
+
+                <div class="buttons">
+
+                    <button id="allCourses">All Courses</button>
+
+                    <button id="wddCourses">WDD Courses</button>
+
+                    <button id="cseCourses">CSE Courses</button>
+
+                </div>
+
+                <div id="courseContainer">
+
+                    <!-- JavaScript inserts course cards here -->
+
+                </div>
+
+                <p id="Total credits ">Total Credits: 0</p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="social">
+
+            <a href="https://github.com/Byaruhanga649" target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                Facebook
+            </a>
+
+        </div>
+
+        <p>
+            &copy;
+            <span id="currentYear"></span>
+            Byaruhanga Arthur | Uganda
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
 </body>
+
 </html>

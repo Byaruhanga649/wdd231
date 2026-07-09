@@ -1,0 +1,299 @@
+/* ------------------------------
+   Global Styles
+--------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary:#1d3557;
+    --secondary:#457b9d;
+    --accent:#e63946;
+    --light:#f1faee;
+    --dark:#222;
+    --completed:#d8f3dc;
+}
+
+body{
+    font-family:"Roboto",sans-serif;
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.6;
+}
+
+/* ------------------------------
+   Header
+--------------------------------*/
+
+header{
+    background:var(--primary);
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:1rem;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:.75rem;
+}
+
+.logo span{
+    font-size:1.3rem;
+    font-weight:bold;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+}
+
+/* ------------------------------
+   Navigation
+--------------------------------*/
+
+#menuButton{
+    background:none;
+    border:none;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+nav{
+    display:none;
+
+    flex-direction:column;
+
+    position:absolute;
+
+    top:75px;
+    left:0;
+
+    width:100%;
+
+    background:var(--primary);
+}
+
+nav.open{
+    display:flex;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:1rem;
+    text-align:center;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:var(--secondary);
+}
+
+nav a.active{
+    background:var(--accent);
+}
+
+/* ------------------------------
+   Main
+--------------------------------*/
+
+main{
+    max-width:1200px;
+    margin:auto;
+    padding:1rem;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:1.5rem;
+}
+
+.home-grid{
+    display:grid;
+    gap:1.5rem;
+}
+
+/* ------------------------------
+   Cards
+--------------------------------*/
+
+.card{
+    background:white;
+    padding:1rem;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.card h2{
+    margin-bottom:1rem;
+    color:var(--primary);
+}
+
+/* ------------------------------
+   Profile
+--------------------------------*/
+
+.profile{
+    display:block;
+    width:100%;
+    max-width:250px;
+    margin:auto;
+    border-radius:8px;
+}
+
+/* ------------------------------
+   Filter Buttons
+--------------------------------*/
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.5rem;
+    margin-bottom:1rem;
+}
+
+.buttons button{
+    flex:1;
+
+    padding:.7rem;
+
+    border:none;
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    border-radius:6px;
+
+    transition:.3s;
+}
+
+.buttons button:hover{
+    background:var(--secondary);
+}
+
+/* ------------------------------
+   Course Cards
+--------------------------------*/
+
+#courseContainer{
+
+    display:grid;
+
+    gap:1rem;
+}
+
+.course-card{
+
+    background:#fafafa;
+
+    border-left:6px solid var(--secondary);
+
+    padding:1rem;
+
+    border-radius:8px;
+}
+
+.course-card.completed{
+
+    background:var(--completed);
+
+    border-left:6px solid green;
+}
+
+.course-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:.5rem;
+}
+
+.course-card p{
+
+    margin:.25rem 0;
+}
+
+#credits{
+
+    margin-top:1rem;
+
+    font-weight:bold;
+
+    text-align:center;
+}
+
+/* ------------------------------
+   Footer
+--------------------------------*/
+
+footer{
+
+    background:var(--primary);
+
+    color:white;
+
+    text-align:center;
+
+    padding:1.5rem;
+
+    margin-top:2rem;
+}
+
+.social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:1rem;
+
+    margin-bottom:1rem;
+}
+
+.social a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+}
+
+.social a:hover{
+
+    color:#ffd166;
+}
+
+/* ------------------------------
+   Images
+--------------------------------*/
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+}
+
+/* ------------------------------
+   Accessibility
+--------------------------------*/
+
+button:focus,
+a:focus{
+
+    outline:3px solid orange;
+
+    outline-offset:2px;
+}
