@@ -1,55 +1,44 @@
-// Footer
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
-
-// Hamburger Menu
-const menuButton = document.querySelector("#menu");
-const nav = document.querySelector("nav");
-
-menuButton.addEventListener("click", () => {
-    nav.classList.toggle("open");
-});
-
-// Members
-const membersContainer = document.querySelector("#members");
+const members = document.querySelector("#members");
 
 async function getMembers() {
     const response = await fetch("data/members.json");
-    const members = await response.json();
-    displayMembers(members);
+    const data = await response.json();
+    displayMembers(data.members);
 }
 
-function displayMembers(members) {
-    membersContainer.innerHTML = "";
+function displayMembers(companyList) {
+    members.innerHTML = "";
 
-    members.forEach(member => {
-        const card = document.createElement("section");
+    companyList.forEach(company => {
+        let card = document.createElement("section");
 
         card.innerHTML = `
-            <img src="${member.image}" alt="${member.name}" loading="lazy">
-            <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <p><a href="${member.website}" target="_blank">${member.website}</a></p>
-            <p>Membership Level: ${member.membership}</p>
+            <img src="images/${company.image}" alt="${company.name}">
+            <h2>${company.name}</h2>
+            <p>${company.address}</p>
+            <p>${company.phone}</p>
+            <p><a href="${company.website}" target="_blank">${company.website}</a></p>
+            <p>Membership Level: ${company.membershipLevel}</p>
         `;
 
-        membersContainer.appendChild(card);
+        members.appendChild(card);
     });
 }
 
+
 getMembers();
 
-// Grid/List Buttons
-const gridButton = document.querySelector("#grid");
-const listButton = document.querySelector("#list");
 
-gridButton.addEventListener("click", () => {
-    membersContainer.classList.add("grid");
-    membersContainer.classList.remove("list");
+document.querySelector("#grid").addEventListener("click", () => {
+    members.className = "grid";
 });
 
-listButton.addEventListener("click", () => {
-    membersContainer.classList.add("list");
-    membersContainer.classList.remove("grid");
+
+document.querySelector("#list").addEventListener("click", () => {
+    members.className = "list";
 });
+
+
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
+
+document.querySelector("#lastModified").textContent = document.lastModified;
