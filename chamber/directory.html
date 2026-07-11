@@ -11,58 +11,77 @@
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Kampala Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore businesses and services available through the Kampala Chamber of Commerce directory.">
+    <meta property="og:image" content="https://byaruhanga649.github.io/wdd231/chamber/images/chamber.jpg">
+    <meta property="og:url" content="https://byaruhanga649.github.io/wdd231/chamber/directory.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- CSS Files -->
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- JavaScript -->
     <script src="scripts/directory.js" defer></script>
 </head>
-<meta property="og:title" content="Kampala Chamber of Commerce Directory">
-
-<meta property="og:description" content="Explore businesses and services available through the Kampala Chamber of Commerce directory.">
-
-<meta property="og:image" content="https://byaruhanga649.github.io/wdd231/chamber/images/chamber.jpg">
-
-<meta property="og:url" content="https://byaruhanga649.github.io/wdd231/chamber/directory.html">
 
 <body>
 
-    <header>
-        <h1>Kampala Chamber of Commerce</h1>
+<header>
+    <h2>Kampala Chamber of Commerce</h2>
 
-        <button id="menu">☰</button>
+    <button id="menu" aria-label="Open Menu"></button>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="directory.html" class="active">Directory</a>
-            <a href="discover.html">Discover</a>
-            <a href="join.html">Join</a>
-            <a href="thankyou.html">Thank You</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="directory.html" class="active">Directory</a>
+        <a href="discover.html">Discover</a>
+        <a href="join.html">Join</a>
+        <a href="thankyou.html">Thank You</a>
+    </nav>
+</header>
 
-    <main>
-        <h1>Kampala Chamber of Commerce Directory</h1>
-        <h2>Business Directory</h2>
 
-        <div class="view-buttons">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
+<main>
 
-        <section id="members" class="grid"></section>
-    </main>
+    <h1>Business Directory</h1>
 
-    <footer>
-        <p>&copy; <span id="year"></span> Byaruhanga Arthur | WDD 231</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
-    </footer>
+    <section class="buttons">
+        <button id="grid">Grid</button>
+        <button id="list">List</button>
+    </section>
+
+    <section id="members" class="grid">
+        <!-- Member cards loaded from JSON -->
+    </section>
+
+</main>
+
+
+<footer>
+    <p>
+        Kampala Chamber of Commerce<br>
+        Kampala, Uganda<br>
+        Email: info@kampalachamber.com<br>
+        Phone: +256 700 000000
+    </p>
+
+    <p>
+        © <span id="currentyear"></span> Byaruhanga Arthur | WDD 231
+    </p>
+
+    <p>
+        Last Modification:
+        <span id="lastModified"></span>
+    </p>
+</footer>
+
 
 </body>
+</html>
