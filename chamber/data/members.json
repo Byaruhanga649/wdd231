@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Kampala Supermarket",
+    "address": "Plot 12 Kampala Road, Kampala",
+    "phone": "+256 700 111111",
+    "website": "https://kampalasupermarket.com",
+    "image": "images/logo1.webp",
+    "membership": 3
+  },
+  {
+    "name": "Lake View Hotel",
+    "address": "Entebbe Road, Kampala",
+    "phone": "+256 700 222222",
+    "website": "https://lakeviewhotel.com",
+    "image": "images/logo2.webp",
+    "membership": 2
+  },
+  {
+    "name": "City Pharmacy",
+    "address": "Kampala Central",
+    "phone": "+256 700 333333",
+    "website": "https://citypharmacy.ug",
+    "image": "images/logo3.webp",
+    "membership": 3
+  },
+  {
+    "name": "Arthur Tech Solutions",
+    "address": "Ntinda, Kampala",
+    "phone": "+256 700 444444",
+    "website": "https://arthurtech.ug",
+    "image": "images/logo4.webp",
+    "membership": 1
+  },
+  {
+    "name": "Fresh Foods Ltd",
+    "address": "Nakawa, Kampala",
+    "phone": "+256 700 555555",
+    "website": "https://freshfoods.ug",
+    "image": "images/logo5.webp",
+    "membership": 2
+  },
+  {
+    "name": "Vision Electronics",
+    "address": "Wandegeya, Kampala",
+    "phone": "+256 700 666666",
+    "website": "https://visionelectronics.ug",
+    "image": "images/logo6.webp",
+    "membership": 3
+  },
+  {
+    "name": "Green Gardens",
+    "address": "Kololo, Kampala",
+    "phone": "+256 700 777777",
+    "website": "https://greengardens.ug",
+    "image": "images/logo7.webp",
+    "membership": 1
+  }
+]

@@ -1,0 +1,139 @@
+/* Mobile First */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+/* Header */
+
+header {
+    background: #003366;
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Hamburger Button */
+
+#menu {
+    display: block;
+    margin: 0 auto;
+    padding: .5rem 1rem;
+    border: none;
+    background: white;
+    color: #003366;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+/* Navigation */
+
+nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: .75rem;
+    text-align: center;
+}
+
+nav a:hover,
+nav a.active {
+    background: #0055aa;
+}
+
+/* Main */
+
+main {
+    max-width: 1100px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+
+.view-buttons {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.view-buttons button {
+    padding: .6rem 1rem;
+    margin: .3rem;
+    cursor: pointer;
+}
+
+/* Member Cards */
+
+#members.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+#members.grid section {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+#members.grid img {
+    width: 120px;
+    height: auto;
+    margin-bottom: .5rem;
+}
+
+/* Footer */
+
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* List View */
+
+#members.list {
+    display: block;
+}
+
+#members.list section {
+    display: block;
+    background: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+
+#members.list img {
+    display: none;
+}

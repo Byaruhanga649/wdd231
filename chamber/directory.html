@@ -1,0 +1,53 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chamber Directory</title>
+
+    <meta name="description" content="Directory page for the Chamber of Commerce website.">
+    <meta name="author" content="Byaruhanga Arthur">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kampala Chamber of Commerce</h1>
+
+        <button id="menu">☰</button>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="directory.html" class="active">Directory</a>
+            <a href="discover.html">Discover</a>
+            <a href="join.html">Join</a>
+            <a href="thankyou.html">Thank You</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Business Directory</h2>
+
+        <div class="view-buttons">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+
+        <section id="members" class="grid"></section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Byaruhanga Arthur | WDD 231</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
