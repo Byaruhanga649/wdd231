@@ -16,14 +16,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
 
     <!-- JavaScript -->
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
@@ -35,11 +35,9 @@
             <span>Byaruhanga Arthur</span>
         </div>
 
-        <button id="menuButton" aria-label="Open Navigation Menu">
-            &#9776;
-        </button>
+        <button id="menu" aria-label=" Menu">&#9776;</button>
 
-        <nav id="navMenu">
+        <nav id="nav">
             <a href="index.html" class="active">Home</a>
             <a href="chamber/index.html">Chamber</a>
             <a href="final/index.html">Final</a>
@@ -58,7 +56,7 @@
 
                 <p>
                     Hello! My name is <strong>Byaruhanga Arthur</strong>. I am a student in
-                    WDD 231: Dynamic Web Fundamentals through BYU–Idaho. I enjoy web
+                    WDD 231: Dynamic Web Fundamentals through BYUIdaho. I enjoy web
                     development, programming, and learning new technologies.
                 </p>
 
@@ -68,37 +66,32 @@
                 </p>
             </section>
 
-            <section class="card">
+            <section class="photo">
                 <h2>Student Photo</h2>
 
-                <img src="/images/my profile.webp" alt="Photo of Byaruhanga Arthur" class="profile">
+                <img src="/images/my profile.webp" alt="Photo of Byaruhanga Arthur" loading="lazy" width="250"
+                    height="300">
             </section>
 
-            <section class="card certificate">
+            <section class="certificate">
 
-                <h2>Web &amp; Computer Programming Certificate</h2>
+                <h2>Web & Computer Programming Certificate</h2>
 
                 <div class="buttons">
 
-                    <button id="allCourses">All Courses</button>
+                    <button id="all">All Courses</button>
 
-                    <button id="wddCourses">WDD Courses</button>
+                    <button id="wdd">WDD Courses</button>
 
-                    <button id="cseCourses">CSE Courses</button>
-
-                </div>
-
-                <div id="courseContainer">
-
-                    <!-- JavaScript inserts course cards here -->
+                    <button id="cse">CSE Courses</button>
 
                 </div>
 
-                <p id="Total credits ">Total Credits: 0</p>
+                <div id="courses"></div>
+
+                <p id="credits"></p>
 
             </section>
-
-        </div>
 
     </main>
 
@@ -106,17 +99,11 @@
 
         <div class="social">
 
-            <a href="https://github.com/Byaruhanga649" target="_blank" rel="noopener noreferrer">
-                GitHub
-            </a>
+            <a href="https://github.com/Byaruhanga649" target="_blank">GitHub</a>
 
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                LinkedIn
-            </a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
 
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                Facebook
-            </a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
 
         </div>
 

@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -77,3 +77,54 @@ const courses = [
         completed: false
     }
 ]
+
+const courseContainer = document.querySelector("#courses");
+const creditDisplay = document.querySelector("#credits");
+
+function displayCourses(courseList) {
+
+    courseContainer.innerHTML = "";
+
+    courseList.forEach(course => {
+
+        const card = document.createElement("div");
+        card.classList.add("course-card");
+
+        if (course.completed) {
+            card.classList.add("completed");
+        }
+
+        card.innerHTML = `
+            <h3>${course.subject} ${course.number}</h3>
+            <p>${course.title}</p>
+            <p><strong>${course.credits}</strong> Credits</p>
+        `;
+
+        courseContainer.appendChild(card);
+    });
+
+    const totalCredits = courseList.reduce((sum, course) => sum + course.credits, 0);
+
+    creditDisplay.textContent = `Total Credits: ${totalCredits}`;
+}
+
+displayCourses(courses);
+
+// Filter Buttons
+
+document.querySelector("#all").addEventListener("click", () => {
+    displayCourses(courses);
+});
+
+document.querySelector("#wdd").addEventListener("click", () => {
+    displayCourses(
+        courses.filter(course => course.subject === "WDD")
+    );
+});
+
+document.querySelector("#cse").addEventListener("click", () => {
+    displayCourses(
+        courses.filter(course => course.subject === "CSE")
+    );
+});
+console.log("courses.js loaded");

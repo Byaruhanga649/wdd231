@@ -1,14 +1,12 @@
-const menuButton = document.querySelector("#menuButton");
-const navigation = document.querySelector("#navMenu");
+const menu = document.querySelector("#menu");
+const nav = document.querySelector("#nav");
 
-menuButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
+menu.addEventListener("click", () => {
+    nav.classList.toggle("open");
 
-    if (navigation.classList.contains("open")) {
-        menuButton.innerHTML = "✖";
-        menuButton.setAttribute("aria-label", "Close Menu");
+    if (nav.classList.contains("open")) {
+        menu.innerHTML = "✖";
     } else {
-        menuButton.innerHTML = "☰";
-        menuButton.setAttribute("aria-label", "Open Menu");
+        menu.innerHTML = "☰";
     }
 });

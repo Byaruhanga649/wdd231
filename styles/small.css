@@ -1,6 +1,4 @@
-/* ------------------------------
-   Global Styles
---------------------------------*/
+/* ---------- Base Styles ---------- */
 
 * {
     margin: 0;
@@ -8,292 +6,181 @@
     box-sizing: border-box;
 }
 
-:root{
-    --primary:#1d3557;
-    --secondary:#457b9d;
-    --accent:#e63946;
-    --light:#f1faee;
-    --dark:#222;
-    --completed:#d8f3dc;
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    background: #f5f5f5;
+    color: #222;
 }
 
-body{
-    font-family:"Roboto",sans-serif;
-    background:var(--light);
-    color:var(--dark);
-    line-height:1.6;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-/* ------------------------------
-   Header
---------------------------------*/
+/* ---------- Header ---------- */
 
-header{
-    background:var(--primary);
-    color:white;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:1rem;
+header {
+    background: #0b3d91;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
-.logo{
-    display:flex;
-    align-items:center;
-    gap:.75rem;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
 }
 
-.logo span{
-    font-size:1.3rem;
-    font-weight:bold;
+.logo span {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-.logo img{
-    width:45px;
-    height:45px;
+#menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
-/* ------------------------------
-   Navigation
---------------------------------*/
+/* ---------- Navigation ---------- */
 
-#menuButton{
-    background:none;
-    border:none;
-    color:white;
-    font-size:2rem;
-    cursor:pointer;
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #123f87;
 }
 
-nav{
-    display:none;
-
-    flex-direction:column;
-
-    position:absolute;
-
-    top:75px;
-    left:0;
-
-    width:100%;
-
-    background:var(--primary);
+nav.open {
+    display: flex;
 }
 
-nav.open{
-    display:flex;
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    padding:1rem;
-    text-align:center;
-    transition:.3s;
+nav a:hover {
+    background: #295db6;
 }
 
-nav a:hover{
-    background:var(--secondary);
+nav a.active {
+    background: #ffffff;
+    color: #0b3d91;
+    font-weight: bold;
 }
 
-nav a.active{
-    background:var(--accent);
+/* ---------- Main ---------- */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
 }
 
-/* ------------------------------
-   Main
---------------------------------*/
-
-main{
-    max-width:1200px;
-    margin:auto;
-    padding:1rem;
+h1 {
+    margin-bottom: 1rem;
 }
 
-h1{
-    text-align:center;
-    margin-bottom:1.5rem;
+section {
+    background: white;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
 }
 
-.home-grid{
-    display:grid;
-    gap:1.5rem;
+h2 {
+    margin-bottom: .75rem;
+    color: #0b3d91;
 }
 
-/* ------------------------------
-   Cards
---------------------------------*/
+/* ---------- Student Photo ---------- */
 
-.card{
-    background:white;
-    padding:1rem;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,.1);
+.photo img {
+    margin: auto;
+    border-radius: 8px;
 }
 
-.card h2{
-    margin-bottom:1rem;
-    color:var(--primary);
+/* ---------- Buttons ---------- */
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: 1rem 0;
 }
 
-/* ------------------------------
-   Profile
---------------------------------*/
-
-.profile{
-    display:block;
-    width:100%;
-    max-width:250px;
-    margin:auto;
-    border-radius:8px;
+.buttons button {
+    flex: 1;
+    padding: .7rem;
+    border: none;
+    background: #0b3d91;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-/* ------------------------------
-   Filter Buttons
---------------------------------*/
-
-.buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:.5rem;
-    margin-bottom:1rem;
+.buttons button:hover {
+    background: #295db6;
 }
 
-.buttons button{
-    flex:1;
+/* ---------- Course Cards ---------- */
 
-    padding:.7rem;
-
-    border:none;
-
-    background:var(--primary);
-
-    color:white;
-
-    cursor:pointer;
-
-    border-radius:6px;
-
-    transition:.3s;
+#courses {
+    display: grid;
+    gap: 1rem;
 }
 
-.buttons button:hover{
-    background:var(--secondary);
+.course-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 6px;
+    background: #fafafa;
 }
 
-/* ------------------------------
-   Course Cards
---------------------------------*/
-
-#courseContainer{
-
-    display:grid;
-
-    gap:1rem;
+.completed {
+    background: #d9f8d9;
+    border: 2px solid green;
 }
 
-.course-card{
+/* ---------- Credits ---------- */
 
-    background:#fafafa;
-
-    border-left:6px solid var(--secondary);
-
-    padding:1rem;
-
-    border-radius:8px;
+#credits {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
 }
 
-.course-card.completed{
+/* ---------- Footer ---------- */
 
-    background:var(--completed);
-
-    border-left:6px solid green;
+footer {
+    background: #0b3d91;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
 }
 
-.course-card h3{
-
-    color:var(--primary);
-
-    margin-bottom:.5rem;
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
-.course-card p{
-
-    margin:.25rem 0;
+.social a {
+    color: white;
+    text-decoration: none;
 }
 
-#credits{
-
-    margin-top:1rem;
-
-    font-weight:bold;
-
-    text-align:center;
-}
-
-/* ------------------------------
-   Footer
---------------------------------*/
-
-footer{
-
-    background:var(--primary);
-
-    color:white;
-
-    text-align:center;
-
-    padding:1.5rem;
-
-    margin-top:2rem;
-}
-
-.social{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:1rem;
-
-    margin-bottom:1rem;
-}
-
-.social a{
-
-    color:white;
-
-    text-decoration:none;
-
-    font-weight:bold;
-}
-
-.social a:hover{
-
-    color:#ffd166;
-}
-
-/* ------------------------------
-   Images
---------------------------------*/
-
-img{
-
-    max-width:100%;
-
-    height:auto;
-}
-
-/* ------------------------------
-   Accessibility
---------------------------------*/
-
-button:focus,
-a:focus{
-
-    outline:3px solid orange;
-
-    outline-offset:2px;
+.social a:hover {
+    text-decoration: underline;
 }
