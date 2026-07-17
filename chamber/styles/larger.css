@@ -1,38 +1,16 @@
-/* Larger Screen */
-
 @media screen and (min-width: 768px) {
 
-    /* Hide hamburger button */
     #menu {
         display: none;
     }
 
-    /* Navigation */
-    nav {
+    #nav {
+        display: block;
+    }
+
+    .navigation {
         display: flex;
-        justify-content: center;
         gap: 1rem;
-        flex-direction: row;
-    }
-
-    nav a {
-        padding: 1rem;
-    }
-
-    /* Header */
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-    }
-
-    header h1 {
-        margin: 0;
-    }
-
-    /* Grid view */
-    #members.grid {
-        grid-template-columns: repeat(3, 1fr);
+        list-style: none;
     }
 }

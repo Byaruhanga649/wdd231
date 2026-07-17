@@ -1,12 +1,12 @@
-const menu = document.querySelector("#menu");
-const nav = document.querySelector("#nav");
+const menuButton = document.querySelector("#menu");
+const navigation = document.querySelector("#nav");
 
-menu.addEventListener("click", () => {
-    nav.classList.toggle("open");
+menuButton.addEventListener("click", () => {
+    navigation.classList.toggle("open");
 
-    if (nav.classList.contains("open")) {
-        menu.innerHTML = "✖";
+    if (navigation.classList.contains("open")) {
+        menuButton.textContent = "✖";
     } else {
-        menu.innerHTML = "☰";
+        menuButton.textContent = "☰";
     }
 });
