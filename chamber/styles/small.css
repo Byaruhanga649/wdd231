@@ -307,9 +307,50 @@ footer {
 .navigation li {
     text-align: center;
 }
+hero {
+    position: relative;
+}
 
-
-.navigation a {
+.hero img {
+    width: 100%;
+    height: auto;
     display: block;
+}
+
+.cta {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: #0056b3;
+    color: white;
     padding: 1rem;
+    text-decoration: none;
+    border-radius: 400px;
+}
+
+.events,
+.weather,
+.spotlights {
+    padding: 1rem;
+}
+/* Company Spotlights */
+
+#spotlights {
+    display: grid;
+    gap: 1rem;
+}
+
+
+.spotlight-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    background: white;
+}
+
+
+.spotlight-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
 }

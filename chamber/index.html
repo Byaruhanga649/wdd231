@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kampala Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Welcome to the Kampala Chamber of Commerce.Find local businesses, weather,events, and membership information.">
+    <meta name="author" content="Byaruhanga Arthur">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Kampala Chamber of Commerce">
+    <meta property="og:description" content="Welcome to the Kampala Chamber of Commerce website.">
+    <meta property="og:image" content="https://byaruhanga649.github.io/wdd231/chamber/images/chamber.jpg">
+    <meta property="og:url" content="https://byaruhanga649.github.io/wdd231/chamber/directory.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kampala Chamber of Commerce</h1>
+
+        <button id="menu" aria-label="Open Menu"></button>
+
+        <nav id="nav">
+            <ul class="navigation">
+                <a href="../index.html">Home</a>
+                <a href="directory.html" class="active">Directory</a>
+                <a href="discover.html">Discover</a>
+                <a href="join.html">Join</a>
+                <a href="thankyou.html">Thank You</a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <img src="images/hero.jpg" alt="Kampala City">
+
+            <a class="cta" href="join.html">
+                Join the Chamber
+            </a>
+
+        </section>
+
+        <section class="events">
+
+            <h2>Current Events</h2>
+
+            <p>
+                Business Networking Breakfast – July 25, 2026.
+                Join local entrepreneurs and investors.
+            </p>
+
+        </section>
+
+        <section class="weather">
+
+            <h2>Weather</h2>
+
+            <div id="weather-info">
+                Loading weather...
+            </div>
+
+            <h3>3-Day Forecast</h3>
+
+            <div id="forecast"></div>
+
+        </section>
+
+        <section class="spotlights">
+
+            <h2>Member Spotlights</h2>
+
+            <div id="spotlights"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            Kampala Chamber of Commerce<br>
+            Kampala, Uganda<br>
+            Email: info@kampalachamber.com<br>
+            Phone: +256 700 000000
+        </p>
+
+        <p>
+            © <span id="currentyear"></span> Byaruhanga Arthur | WDD 231
+        </p>
+
+        <p>
+            Last Modification:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script src="scripts/home.js" defer></script>
+
+
+</body>
+
+</html>
