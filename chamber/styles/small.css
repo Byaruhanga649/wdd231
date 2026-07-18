@@ -279,14 +279,37 @@ footer {
     display: block;
     font-size: 2rem;
     border: none;
-    background: none;
+    background: white;
+    color: #003366;
     cursor: pointer;
 }
 
-#nav {
-    display: none;
+#menu::before {
+    content: "☰";
 }
 
-#nav.open {
+#menu.open::before {
+    content: "✖";
+}
+
+
+.navigation {
+    display: none;
+    flex-direction: column;
+}
+
+
+.navigation.open {
+    display: flex;
+}
+
+
+.navigation li {
+    text-align: center;
+}
+
+
+.navigation a {
     display: block;
+    padding: 1rem;
 }

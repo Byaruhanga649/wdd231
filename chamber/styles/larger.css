@@ -10,7 +10,13 @@
 
     .navigation {
         display: flex;
-        gap: 1rem;
-        list-style: none;
+        flex-direction: row;
     }
+
+    .navigation li a {
+        color: white;
+        text-decoration: none;
+        padding: 0.75rem;
+    }
+
 }
