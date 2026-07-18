@@ -83,12 +83,15 @@ header h1 {
 
 
 nav {
+     margin-top: 1rem;
+}
 
+.navigation {
     display: none;
 
     flex-direction: column;
 
-    margin-top: 1rem;
+    list-style: none;
 
 }
 
@@ -275,14 +278,6 @@ footer {
     display: none;
 
 }
-#menu {
-    display: block;
-    font-size: 2rem;
-    border: none;
-    background: white;
-    color: #003366;
-    cursor: pointer;
-}
 
 #menu::before {
     content: "☰";
@@ -307,7 +302,8 @@ footer {
 .navigation li {
     text-align: center;
 }
-hero {
+
+.hero {
     position: relative;
 }
 
@@ -333,6 +329,7 @@ hero {
 .spotlights {
     padding: 1rem;
 }
+
 /* Company Spotlights */
 
 #spotlights {
