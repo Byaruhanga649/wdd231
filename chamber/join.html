@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Join the Kampala Chamber of Commerce">
+    <meta name="description" content="Apply to join the Kampala Chamber of Commerce and enjoy networking opportunities, business promotions,training events, and exclusive membership benefits.">
     <meta name="author" content="Byaruhanga Arthur">
 
     <title>Join | Kampala Chamber of Commerce</title>
 
     <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -17,12 +22,23 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/join.js" defer></script>
+    <meta property="og:title" content="Join Kampala Chamber of Commerce Membership">
+
+<meta property="og:description"
+content="Become a member of the Kampala Chamber of Commerce and access exclusive networking, training, advertising, and business opportunities.">
+
+<meta property="og:image"
+content="https://byaruhanga649.github.io/wdd231/chamber/images/chamber.webp">
+
+<meta property="og:url"
+content="https://byaruhanga649.github.io/wdd231/chamber/join.html">
 </head>
 
 <body>
 
 <header>
     <h1>Kampala Chamber of Commerce</h1>
+    <h2>Membership Application</h2>
 
     <button id="menu" aria-label="Menu"></button>
 
@@ -152,32 +168,32 @@ value="Submit Membership Application">
 <div class="card">
 <h3>NP Membership</h3>
 <p>For non-profit organizations.</p>
-<button onclick="document.getElementById('npModal').showModal()">
-Learn More
+<button id="openNP">Learn More</button>
+<button id="closeNP">Close</button>
 </button>
 </div>
 
 <div class="card">
 <h3>Bronze Membership</h3>
 <p>Affordable starter membership.</p>
-<button onclick="document.getElementById('bronzeModal').showModal()">
-Learn More
+<button id="openBronze">Learn More</button>
+<button id="closeBronze">Close</button>
 </button>
 </div>
 
 <div class="card">
 <h3>Silver Membership</h3>
 <p>Extra advertising and discounts.</p>
-<button onclick="document.getElementById('silverModal').showModal()">
-Learn More
+<button id="openSilver">Learn More</button>
+<button id="closeSilver">Close</button>
 </button>
 </div>
 
 <div class="card">
 <h3>Gold Membership</h3>
 <p>Maximum Chamber benefits.</p>
-<button onclick="document.getElementById('goldModal').showModal()">
-Learn More
+<button id="openGold">Learn More</button>
+<button id="closeGold">Close</button>
 </button>
 </div>
 
