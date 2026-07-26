@@ -29,7 +29,7 @@
     <meta property="og:description"
         content="Become a member of the Kampala Chamber of Commerce and access exclusive networking, training, advertising, and business opportunities.">
 
-    <meta property="og:image" content="https://byaruhanga649.github.io/wdd231/chamber/images/chamber.webp">
+    <meta property="og:image" content="https://byaruhanga649.github.io/wdd231/chamber/images/chamber.jpg">
 
     <meta property="og:url" content="https://byaruhanga649.github.io/wdd231/chamber/join.html">
 </head>
@@ -37,8 +37,6 @@
 <body>
 
     <header>
-        <h1>Kampala Chamber of Commerce</h1>
-        <h2>Membership Application</h2>
 
         <button id="menu" aria-label="Menu"></button>
 
@@ -52,7 +50,7 @@
 
     <main>
 
-        <h2>Membership Application</h2>
+        <h1>Kampala Chamber of Commerce Membership Application</h1>
 
         <div class="join-container">
 
@@ -134,28 +132,24 @@
                     <h3>NP Membership</h3>
                     <p>For non-profit organizations.</p>
                     <button id="openNP">Learn More</button>
-                    <button id="closeNP">Close</button>
                 </div>
 
                 <div class="card">
                     <h3>Bronze Membership</h3>
                     <p>Affordable starter membership.</p>
                     <button id="openBronze">Learn More</button>
-                    <button id="closeBronze">Close</button>
                 </div>
 
                 <div class="card">
                     <h3>Silver Membership</h3>
                     <p>Extra advertising and discounts.</p>
                     <button id="openSilver">Learn More</button>
-                    <button id="closeSilver">Close</button>
                 </div>
 
                 <div class="card">
                     <h3>Gold Membership</h3>
                     <p>Maximum Chamber benefits.</p>
                     <button id="openGold">Learn More</button>
-                    <button id="closeGold">Close</button>
                 </div>
 
             </section>
@@ -173,9 +167,8 @@
                 <li>Business directory listing</li>
             </ul>
 
-            <button onclick="document.getElementById('npModal').close()">
-                Close
-            </button>
+            <button id="closeNP">
+                close</button>
 
         </dialog>
 
@@ -191,9 +184,8 @@
                 <li>Event discounts</li>
             </ul>
 
-            <button onclick="document.getElementById('bronzeModal').close()">
-                Close
-            </button>
+            <button id="closeBronze">
+                close</button>
 
         </dialog>
 
@@ -209,7 +201,7 @@
                 <li>Priority event registration</li>
             </ul>
 
-            <button onclick="document.getElementById('silverModal').close()">
+            <button id="closeSilver">
                 Close
             </button>
 
@@ -228,7 +220,7 @@
                 <li>Premium advertising</li>
             </ul>
 
-            <button onclick="document.getElementById('goldModal').close()">
+            <button id="closeGold">
                 Close
             </button>
 

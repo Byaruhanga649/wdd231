@@ -1,39 +1,78 @@
-// Set the hidden timestamp field when the page loads
-document.addEventListener("DOMContentLoaded", () => {
-    const timestampField = document.getElementById("timestamp");
+// Set timestamp
+const timestamp = document.getElementById("timestamp");
 
-    if (timestampField) {
-        timestampField.value = new Date().toISOString();
-    }
-});
-document.getElementById("openNP").addEventListener("click", () => {
-    document.getElementById("npModal").showModal();
-});
+if (timestamp) {
+    timestamp.value = new Date().toISOString();
+}
 
-document.getElementById("closeNP").addEventListener("click", () => {
-    document.getElementById("npModal").close();
-});
 
-document.getElementById("openBronze").addEventListener("click", () => {
-    document.getElementById("bronzeModal").showModal();
-});
+// NP Dialog
+const openNP = document.getElementById("openNP");
+const npModal = document.getElementById("npModal");
+const closeNP = document.getElementById("closeNP");
 
-document.getElementById("closeBronze").addEventListener("click", () => {
-    document.getElementById("bronzeModal").close();
-});
+if (openNP && npModal) {
+    openNP.addEventListener("click", () => {
+        npModal.showModal();
+    });
+}
 
-document.getElementById("openSilver").addEventListener("click", () => {
-    document.getElementById("silverModal").showModal();
-});
+if (closeNP && npModal) {
+    closeNP.addEventListener("click", () => {
+        npModal.close();
+    });
+}
 
-document.getElementById("closeSilver").addEventListener("click", () => {
-    document.getElementById("silverModal").close();
-});
 
-document.getElementById("openGold").addEventListener("click", () => {
-    document.getElementById("goldModal").showModal();
-});
+// Bronze Dialog
+const openBronze = document.getElementById("openBronze");
+const bronzeModal = document.getElementById("bronzeModal");
+const closeBronze = document.getElementById("closeBronze");
 
-document.getElementById("closeGold").addEventListener("click", () => {
-    document.getElementById("goldModal").close();
-});
+if (openBronze && bronzeModal) {
+    openBronze.addEventListener("click", () => {
+        bronzeModal.showModal();
+    });
+}
+
+if (closeBronze && bronzeModal) {
+    closeBronze.addEventListener("click", () => {
+        bronzeModal.close();
+    });
+}
+
+
+// Silver Dialog
+const openSilver = document.getElementById("openSilver");
+const silverModal = document.getElementById("silverModal");
+const closeSilver = document.getElementById("closeSilver");
+
+if (openSilver && silverModal) {
+    openSilver.addEventListener("click", () => {
+        silverModal.showModal();
+    });
+}
+
+if (closeSilver && silverModal) {
+    closeSilver.addEventListener("click", () => {
+        silverModal.close();
+    });
+}
+
+
+// Gold Dialog
+const openGold = document.getElementById("openGold");
+const goldModal = document.getElementById("goldModal");
+const closeGold = document.getElementById("closeGold");
+
+if (openGold && goldModal) {
+    openGold.addEventListener("click", () => {
+        goldModal.showModal();
+    });
+}
+
+if (closeGold && goldModal) {
+    closeGold.addEventListener("click", () => {
+        goldModal.close();
+    });
+}
