@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Apply to join the Kampala Chamber of Commerce and enjoy networking opportunities, business promotions,training events, and exclusive membership benefits.">
+    <meta name="description"
+        content="Apply to join the Kampala Chamber of Commerce and enjoy networking opportunities, business promotions,training events, and exclusive membership benefits.">
     <meta name="author" content="Byaruhanga Arthur">
 
     <title>Join | Kampala Chamber of Commerce</title>
@@ -24,262 +26,222 @@
     <script src="scripts/join.js" defer></script>
     <meta property="og:title" content="Join Kampala Chamber of Commerce Membership">
 
-<meta property="og:description"
-content="Become a member of the Kampala Chamber of Commerce and access exclusive networking, training, advertising, and business opportunities.">
+    <meta property="og:description"
+        content="Become a member of the Kampala Chamber of Commerce and access exclusive networking, training, advertising, and business opportunities.">
 
-<meta property="og:image"
-content="https://byaruhanga649.github.io/wdd231/chamber/images/chamber.webp">
+    <meta property="og:image" content="https://byaruhanga649.github.io/wdd231/chamber/images/chamber.webp">
 
-<meta property="og:url"
-content="https://byaruhanga649.github.io/wdd231/chamber/join.html">
+    <meta property="og:url" content="https://byaruhanga649.github.io/wdd231/chamber/join.html">
 </head>
 
 <body>
 
-<header>
-    <h1>Kampala Chamber of Commerce</h1>
-    <h2>Membership Application</h2>
+    <header>
+        <h1>Kampala Chamber of Commerce</h1>
+        <h2>Membership Application</h2>
 
-    <button id="menu" aria-label="Menu"></button>
+        <button id="menu" aria-label="Menu"></button>
 
-    <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="directory.html">Directory</a>
-        <a href="join.html" class="active">Join</a>
-        <a href="discover.html">Discover</a>
-    </nav>
-</header>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
 
-<main>
+    <main>
 
-<h2>Membership Application</h2>
+        <h2>Membership Application</h2>
 
-<div class="join-container">
+        <div class="join-container">
 
-<form method="get" action="thankyou.html">
+            <form method="get" action="thankyou.html">
 
-<label>
-First Name*
-<input
-type="text"
-name="firstName"
-required
-title="Enter your first name"
-autocomplete="given-name">
-</label>
+                <label>
+                    First Name*
+                    <input type="text" name="firstName" required title="Enter your first name"
+                        autocomplete="given-name">
+                </label>
 
-<label>
-Last Name*
-<input
-type="text"
-name="lastName"
-required
-title="Enter your last name"
-autocomplete="family-name">
-</label>
+                <label>
+                    Last Name*
+                    <input type="text" name="lastName" required title="Enter your last name" autocomplete="family-name">
+                </label>
 
-<label>
-Organization Title
-<input
-type="text"
-name="organizationTitle"
-title="Organization title"
-autocomplete="organization-title"
-pattern="[A-Za-z\s\-]{7,}">
-</label>
+                <label>
+                    Organization Title
+                    <input type="text" name="organizationTitle" title="Organization title"
+                        autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+                </label>
 
-<label>
-Email*
-<input
-type="email"
-name="email"
-required
-title="Enter your email"
-autocomplete="email"
-placeholder="example@email.com">
-</label>
+                <label>
+                    Email*
+                    <input type="email" name="email" required title="Enter your email" autocomplete="email"
+                        placeholder="example@email.com">
+                </label>
 
-<label>
-Mobile Phone*
-<input
-type="tel"
-name="phone"
-required
-title="Enter your phone number"
-autocomplete="tel">
-</label>
+                <label>
+                    Mobile Phone*
+                    <input type="tel" name="phone" required title="Enter your phone number" autocomplete="tel">
+                </label>
 
-<label>
-Business / Organization Name*
-<input
-type="text"
-name="organization"
-required
-title="Organization name"
-autocomplete="organization">
-</label>
+                <label>
+                    Business / Organization Name*
+                    <input type="text" name="organization" required title="Organization name"
+                        autocomplete="organization">
+                </label>
 
-<label>
-Membership Level*
-<select name="membership" required>
+                <label>
+                    Membership Level*
+                    <select name="membership" required>
 
-<option value="">Select Membership</option>
+                        <option value="">Select Membership</option>
 
-<option value="np">
-NP Membership
-</option>
+                        <option value="np">
+                            NP Membership
+                        </option>
 
-<option value="bronze">
-Bronze Membership
-</option>
+                        <option value="bronze">
+                            Bronze Membership
+                        </option>
 
-<option value="silver">
-Silver Membership
-</option>
+                        <option value="silver">
+                            Silver Membership
+                        </option>
 
-<option value="gold">
-Gold Membership
-</option>
+                        <option value="gold">
+                            Gold Membership
+                        </option>
 
-</select>
-</label>
+                    </select>
+                </label>
 
-<label>
-Business Description
-<textarea
-name="description"
-title="Describe your business"
-rows="5"></textarea>
-</label>
+                <label>
+                    Business Description
+                    <textarea name="description" title="Describe your business" rows="5"></textarea>
+                </label>
 
-<input
-type="hidden"
-id="timestamp"
-name="timestamp">
+                <input type="hidden" id="timestamp" name="timestamp">
 
-<input
-type="submit"
-value="Submit Membership Application">
+                <input type="submit" value="Submit Membership Application">
 
-</form>
+            </form>
 
-<section class="membership-cards">
+            <section class="membership-cards">
 
-<div class="card">
-<h3>NP Membership</h3>
-<p>For non-profit organizations.</p>
-<button id="openNP">Learn More</button>
-<button id="closeNP">Close</button>
-</button>
-</div>
+                <div class="card">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations.</p>
+                    <button id="openNP">Learn More</button>
+                    <button id="closeNP">Close</button>
+                </div>
 
-<div class="card">
-<h3>Bronze Membership</h3>
-<p>Affordable starter membership.</p>
-<button id="openBronze">Learn More</button>
-<button id="closeBronze">Close</button>
-</button>
-</div>
+                <div class="card">
+                    <h3>Bronze Membership</h3>
+                    <p>Affordable starter membership.</p>
+                    <button id="openBronze">Learn More</button>
+                    <button id="closeBronze">Close</button>
+                </div>
 
-<div class="card">
-<h3>Silver Membership</h3>
-<p>Extra advertising and discounts.</p>
-<button id="openSilver">Learn More</button>
-<button id="closeSilver">Close</button>
-</button>
-</div>
+                <div class="card">
+                    <h3>Silver Membership</h3>
+                    <p>Extra advertising and discounts.</p>
+                    <button id="openSilver">Learn More</button>
+                    <button id="closeSilver">Close</button>
+                </div>
 
-<div class="card">
-<h3>Gold Membership</h3>
-<p>Maximum Chamber benefits.</p>
-<button id="openGold">Learn More</button>
-<button id="closeGold">Close</button>
-</button>
-</div>
+                <div class="card">
+                    <h3>Gold Membership</h3>
+                    <p>Maximum Chamber benefits.</p>
+                    <button id="openGold">Learn More</button>
+                    <button id="closeGold">Close</button>
+                </div>
 
-</section>
+            </section>
 
-</div>
+        </div>
 
-<!-- NP Modal -->
+        <!-- NP Modal -->
 
-<dialog id="npModal">
-<h3>NP Membership</h3>
+        <dialog id="npModal">
+            <h3>NP Membership</h3>
 
-<ul>
-<li>No membership fee</li>
-<li>Networking opportunities</li>
-<li>Business directory listing</li>
-</ul>
+            <ul>
+                <li>No membership fee</li>
+                <li>Networking opportunities</li>
+                <li>Business directory listing</li>
+            </ul>
 
-<button onclick="document.getElementById('npModal').close()">
-Close
-</button>
+            <button onclick="document.getElementById('npModal').close()">
+                Close
+            </button>
 
-</dialog>
+        </dialog>
 
-<!-- Bronze -->
+        <!-- Bronze -->
 
-<dialog id="bronzeModal">
+        <dialog id="bronzeModal">
 
-<h3>Bronze Membership</h3>
+            <h3>Bronze Membership</h3>
 
-<ul>
-<li>Everything in NP</li>
-<li>Training workshops</li>
-<li>Event discounts</li>
-</ul>
+            <ul>
+                <li>Everything in NP</li>
+                <li>Training workshops</li>
+                <li>Event discounts</li>
+            </ul>
 
-<button onclick="document.getElementById('bronzeModal').close()">
-Close
-</button>
+            <button onclick="document.getElementById('bronzeModal').close()">
+                Close
+            </button>
 
-</dialog>
+        </dialog>
 
-<!-- Silver -->
+        <!-- Silver -->
 
-<dialog id="silverModal">
+        <dialog id="silverModal">
 
-<h3>Silver Membership</h3>
+            <h3>Silver Membership</h3>
 
-<ul>
-<li>Everything in Bronze</li>
-<li>Homepage advertising</li>
-<li>Priority event registration</li>
-</ul>
+            <ul>
+                <li>Everything in Bronze</li>
+                <li>Homepage advertising</li>
+                <li>Priority event registration</li>
+            </ul>
 
-<button onclick="document.getElementById('silverModal').close()">
-Close
-</button>
+            <button onclick="document.getElementById('silverModal').close()">
+                Close
+            </button>
 
-</dialog>
+        </dialog>
 
-<!-- Gold -->
+        <!-- Gold -->
 
-<dialog id="goldModal">
+        <dialog id="goldModal">
 
-<h3>Gold Membership</h3>
+            <h3>Gold Membership</h3>
 
-<ul>
-<li>Everything in Silver</li>
-<li>Homepage spotlight</li>
-<li>VIP networking events</li>
-<li>Premium advertising</li>
-</ul>
+            <ul>
+                <li>Everything in Silver</li>
+                <li>Homepage spotlight</li>
+                <li>VIP networking events</li>
+                <li>Premium advertising</li>
+            </ul>
 
-<button onclick="document.getElementById('goldModal').close()">
-Close
-</button>
+            <button onclick="document.getElementById('goldModal').close()">
+                Close
+            </button>
 
-</dialog>
+        </dialog>
 
-</main>
+    </main>
 
-<footer>
+    <footer>
 
-<p>&copy; 2026 Kampala Chamber of Commerce | Byaruhanga Arthur | WDD 231</p>
+        <p>&copy; 2026 Kampala Chamber of Commerce | Byaruhanga Arthur | WDD 231</p>
 
-</footer>
+    </footer>
 
 </body>
+
 </html>
