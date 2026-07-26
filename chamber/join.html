@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Kampala Chamber of Commerce">
+    <meta name="author" content="Byaruhanga Arthur">
+
+    <title>Join | Kampala Chamber of Commerce</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Kampala Chamber of Commerce</h1>
+
+    <button id="menu" aria-label="Menu"></button>
+
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html" class="active">Join</a>
+        <a href="discover.html">Discover</a>
+    </nav>
+</header>
+
+<main>
+
+<h2>Membership Application</h2>
+
+<div class="join-container">
+
+<form method="get" action="thankyou.html">
+
+<label>
+First Name*
+<input
+type="text"
+name="firstName"
+required
+title="Enter your first name"
+autocomplete="given-name">
+</label>
+
+<label>
+Last Name*
+<input
+type="text"
+name="lastName"
+required
+title="Enter your last name"
+autocomplete="family-name">
+</label>
+
+<label>
+Organization Title
+<input
+type="text"
+name="organizationTitle"
+title="Organization title"
+autocomplete="organization-title"
+pattern="[A-Za-z\s\-]{7,}">
+</label>
+
+<label>
+Email*
+<input
+type="email"
+name="email"
+required
+title="Enter your email"
+autocomplete="email"
+placeholder="example@email.com">
+</label>
+
+<label>
+Mobile Phone*
+<input
+type="tel"
+name="phone"
+required
+title="Enter your phone number"
+autocomplete="tel">
+</label>
+
+<label>
+Business / Organization Name*
+<input
+type="text"
+name="organization"
+required
+title="Organization name"
+autocomplete="organization">
+</label>
+
+<label>
+Membership Level*
+<select name="membership" required>
+
+<option value="">Select Membership</option>
+
+<option value="np">
+NP Membership
+</option>
+
+<option value="bronze">
+Bronze Membership
+</option>
+
+<option value="silver">
+Silver Membership
+</option>
+
+<option value="gold">
+Gold Membership
+</option>
+
+</select>
+</label>
+
+<label>
+Business Description
+<textarea
+name="description"
+title="Describe your business"
+rows="5"></textarea>
+</label>
+
+<input
+type="hidden"
+id="timestamp"
+name="timestamp">
+
+<input
+type="submit"
+value="Submit Membership Application">
+
+</form>
+
+<section class="membership-cards">
+
+<div class="card">
+<h3>NP Membership</h3>
+<p>For non-profit organizations.</p>
+<button onclick="document.getElementById('npModal').showModal()">
+Learn More
+</button>
+</div>
+
+<div class="card">
+<h3>Bronze Membership</h3>
+<p>Affordable starter membership.</p>
+<button onclick="document.getElementById('bronzeModal').showModal()">
+Learn More
+</button>
+</div>
+
+<div class="card">
+<h3>Silver Membership</h3>
+<p>Extra advertising and discounts.</p>
+<button onclick="document.getElementById('silverModal').showModal()">
+Learn More
+</button>
+</div>
+
+<div class="card">
+<h3>Gold Membership</h3>
+<p>Maximum Chamber benefits.</p>
+<button onclick="document.getElementById('goldModal').showModal()">
+Learn More
+</button>
+</div>
+
+</section>
+
+</div>
+
+<!-- NP Modal -->
+
+<dialog id="npModal">
+<h3>NP Membership</h3>
+
+<ul>
+<li>No membership fee</li>
+<li>Networking opportunities</li>
+<li>Business directory listing</li>
+</ul>
+
+<button onclick="document.getElementById('npModal').close()">
+Close
+</button>
+
+</dialog>
+
+<!-- Bronze -->
+
+<dialog id="bronzeModal">
+
+<h3>Bronze Membership</h3>
+
+<ul>
+<li>Everything in NP</li>
+<li>Training workshops</li>
+<li>Event discounts</li>
+</ul>
+
+<button onclick="document.getElementById('bronzeModal').close()">
+Close
+</button>
+
+</dialog>
+
+<!-- Silver -->
+
+<dialog id="silverModal">
+
+<h3>Silver Membership</h3>
+
+<ul>
+<li>Everything in Bronze</li>
+<li>Homepage advertising</li>
+<li>Priority event registration</li>
+</ul>
+
+<button onclick="document.getElementById('silverModal').close()">
+Close
+</button>
+
+</dialog>
+
+<!-- Gold -->
+
+<dialog id="goldModal">
+
+<h3>Gold Membership</h3>
+
+<ul>
+<li>Everything in Silver</li>
+<li>Homepage spotlight</li>
+<li>VIP networking events</li>
+<li>Premium advertising</li>
+</ul>
+
+<button onclick="document.getElementById('goldModal').close()">
+Close
+</button>
+
+</dialog>
+
+</main>
+
+<footer>
+
+<p>&copy; 2026 Kampala Chamber of Commerce | Byaruhanga Arthur | WDD 231</p>
+
+</footer>
+
+</body>
+</html>
