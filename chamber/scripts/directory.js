@@ -1,46 +1,75 @@
-const members = document.querySelector("#members");
+import { places } from "../data/places.mjs";
 
-async function getMembers() {
-    const response = await fetch("data/members.json");
+const cardsContainer = document.querySelector("#discover-cards");
 
-    const data = await response.json();
+// Build the 8 cards
+function displayPlaces() {
+    places.forEach(place => {
 
-    displayMembers(data);
-}
-
-function displayMembers(companyList) {
-    members.innerHTML = "";
-
-    companyList.forEach(company => {
-        let card = document.createElement("section");
+        const card = document.createElement("section");
+        card.classList.add("discover-card");
 
         card.innerHTML = `
-            <img src="${company.image}" alt="${company.name}">
-            <h2>${company.name}</h2>
-            <p>${company.address}</p>
-            <p>${company.phone}</p>
-            <p><a href="${company.website}" target="_blank">${company.website}</a></p>
-            <p>Membership Level: ${company.membership}</p>
+            <h2>${place.name}</h2>
+
+            <figure>
+                <img
+                    src="${place.image}"
+                    alt="${place.name}"
+                    width="300"
+                    height="200"
+                    loading="lazy">
+            </figure>
+
+            <address>${place.address}</address>
+
+            <p>${place.description}</p>
+
+            <button type="button">Learn More</button>
         `;
 
-        members.appendChild(card);
+        cardsContainer.appendChild(card);
     });
 }
 
+displayPlaces();
 
-getMembers();
+// ----------------------
+// Last Visit Message
+// ----------------------
 
+const visitMessage = document.querySelector("#visit-message");
 
-document.querySelector("#grid").addEventListener("click", () => {
-    members.className = "grid";
-});
+const lastVisit = localStorage.getItem("lastVisit");
 
+const today = Date.now();
 
-document.querySelector("#list").addEventListener("click", () => {
-    members.className = "list";
-});
+if (!lastVisit) {
 
+    visitMessage.textContent =
+        "Welcome! Let us know if you have any questions.";
 
-document.querySelector("#currentyear").textContent = new Date().getFullYear();
+} else {
 
-document.querySelector("#lastModified").textContent = document.lastModified;
+    const daysBetween = Math.floor(
+        (today - Number(lastVisit)) / 86400000
+    );
+
+    if (daysBetween < 1) {
+
+        visitMessage.textContent =
+            "Back so soon! Awesome!";
+
+    } else if (daysBetween === 1) {
+
+        visitMessage.textContent =
+            "You last visited 1 day ago.";
+
+    } else {
+
+        visitMessage.textContent =
+            `You last visited ${daysBetween} days ago.`;
+    }
+}
+
+localStorage.setItem("lastVisit", today);
