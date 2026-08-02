@@ -1,58 +1,59 @@
-export const places = [
-  {
-    id: 1,
-    name: "Uganda Museum",
-    image: "images/uganda-museum.webp",
-    address: "Kira Road, Kampala",
-    description: "Uganda's oldest museum showcasing the country's cultural heritage, archaeology, and traditional musical instruments."
-  },
-  {
-    id: 2,
-    name: "Kasubi Tombs",
-    image: "images/kasubi-tombs.webp",
-    address: "Kasubi Hill, Kampala",
-    description: "A UNESCO World Heritage Site and the royal burial grounds of the Buganda Kingdom."
-  },
-  {
-    id: 3,
-    name: "Gaddafi National Mosque",
-    image: "images/gaddafi-mosque.webp",
-    address: "Old Kampala",
-    description: "The largest mosque in Uganda with an observation tower offering breathtaking views of Kampala."
-  },
-  {
-    id: 4,
-    name: "Kabaka's Palace",
-    image: "images/kabaka-palace.webp",
-    address: "Mengo Hill, Kampala",
-    description: "The official palace of the Kabaka of Buganda with rich history and guided tours."
-  },
-  {
-    id: 5,
-    name: "Independence Monument",
-    image: "images/independence-monument.webp",
-    address: "Speke Road, Kampala",
-    description: "A national monument commemorating Uganda's independence from British rule."
-  },
-  {
-    id: 6,
-    name: "Ndere Cultural Centre",
-    image: "images/ndere-cultural-centre.webp",
-    address: "Ntinda, Kampala",
-    description: "A cultural center featuring traditional Ugandan dance, music, storytelling, and cuisine."
-  },
-  {
-    id: 7,
-    name: "Owino Market",
-    image: "images/owino-market.webp",
-    address: "Downtown Kampala",
-    description: "One of East Africa's busiest open-air markets with clothing, food, electronics, and local products."
-  },
-  {
-    id: 8,
-    name: "Ggaba Beach",
-    image: "images/ggaba-beach.webp",
-    address: "Lake Victoria, Kampala",
-    description: "A relaxing lakeside destination popular for boat rides, fresh fish, and beautiful sunsets."
-  }
+const places = [
+    {
+        name: "Uganda Museum",
+        address: "5-7 Kira Road, Kampala, Uganda",
+        image: "images/uganda-museum.webp",
+        description: "The Uganda Museum is one of Uganda's important cultural and historical attractions."
+    },
+
+    {
+        name: "Kasubi Tombs",
+        address: "Kasubi Hill, Kampala, Uganda",
+        image: "images/kasubi-tombs.webp",
+        description: "The Kasubi Tombs are an important cultural and historical site in Kampala."
+    },
+
+    {
+        name: "Gaddafi National Mosque",
+        address: "Old Kampala Hill, Kampala, Uganda",
+        image: "images/gaddafi-mosque.webp",
+        description: "The Gaddafi National Mosque is one of Kampala's well-known landmarks."
+    },
+
+    {
+        name: "Bahai Temple",
+        address: "Kikaaya Hill, Kampala, Uganda",
+        image: "images/bahai-temple.webp",
+        description: "The Bahai Temple is surrounded by beautiful gardens and is an important place of worship."
+    },
+
+    {
+        name: "Uganda Martyrs Shrine",
+        address: "Namugongo, Kampala, Uganda",
+        image: "images/uganda-martyrs-shrine.webp",
+        description: "The Uganda Martyrs Shrine is an important historical and religious site in Uganda."
+    },
+
+    {
+        name: "Ndere Cultural Centre",
+        address: "Ntinda-Kisasi Road, Kampala, Uganda",
+        image: "images/ndere-cultural-centre.webp",
+        description: "Ndere Cultural Centre celebrates Ugandan culture through music, dance, food, and performances."
+    },
+
+    {
+        name: "Mengo Palace",
+        address: "Mengo, Kampala, Uganda",
+        image: "images/mengo-palace.webp",
+        description: "Mengo Palace is an important historical site associated with the Buganda Kingdom."
+    },
+
+    {
+        name: "Lubiri Palace",
+        address: "Mengo Hill, Kampala, Uganda",
+        image: "images/lubiri-palace.webp",
+        description: "Lubiri Palace is an important cultural landmark connected to the Buganda Kingdom."
+    }
 ];
+
+export { places };

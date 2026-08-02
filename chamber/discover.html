@@ -1,62 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kampala Chamber of Commerce | Discover</title>
+    <title>Discover Kampala | Kampala Chamber of Commerce</title>
 
-    <meta name="description" content="Discover Kampala through attractions, culture, and places of interest.">
+    <meta name="description"
+        content="Discover interesting places, attractions, cultural sites, and landmarks in Kampala, Uganda.">
 
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Byaruhanga Arthur">
 
-    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Discover Kampala | Kampala Chamber of Commerce">
 
-    <link rel="stylesheet" href="styles/chamber.css">
+    <meta property="og:description" content="Explore interesting places and attractions around Kampala, Uganda.">
+
+    <meta property="og:image" content="https://byaruhanga649.github.io/wdd231/chamber/images/hero.webp">
+
+    <meta property="og:url" content="https://byaruhanga649.github.io/wdd231/chamber/discover.html">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/discover.css">
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-
+    <script type="module" src="scripts/discover.js"></script>
 </head>
 
 <body>
 
-<header>
+    <header>
 
-    <!-- Copy your existing header exactly -->
+        <div class="header-container">
 
-</header>
+            <div class="brand">
+                <a href="index.html">
+                    <span class="site-title">Kampala</span>
+                    <span class="site-subtitle">Chamber of Commerce</span>
+                </a>
+            </div>
 
-<nav>
-<nav>
-    <ul class="navigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="directory.html">Directory</a></li>
-        <li><a href="discover.html" class="active">Discover</a></li>
-        <li><a href="join.html">Join</a></li>
-    </ul>
-</nav>
+            <button id="menu" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
 
-</nav>
+            <nav>
+                <ul class="navigation">
 
-<main>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
 
-    <h1>Discover Kampala</h1>
+                    <li>
+                        <a href="directory.html">
+                            Directory
+                        </a>
+                    </li>
 
-    <div id="visit-message"></div>
+                    <li>
+                        <a href="discover.html" class="active">
+                            Discover
+                        </a>
+                    </li>
 
-    <section id="discover-cards"></section>
+                    <li>
+                        <a href="join.html">
+                            Join
+                        </a>
+                    </li>
 
-</main>
+                </ul>
+            </nav>
 
-<footer>
+        </div>
 
-    <!-- Copy your existing footer exactly -->
+    </header>
 
-</footer>
 
-<script type="module" src="scripts/discover.js"></script>
+    <main>
+
+        <h1>Discover Kampala</h1>
+
+        <section id="visit-message" aria-live="polite">
+        </section>
+
+        <section id="discover-cards" aria-label="Places of interest in Kampala">
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div>
+
+                <h2>Kampala Chamber of Commerce</h2>
+
+                <p>
+                    Kampala, Uganda
+                </p>
+
+                <p>
+                    Email: info@kampalachamber.com
+                </p>
+
+                <p>
+                    Phone: +256 700 000000
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    © <span id="currentyear"></span>
+                    Kampala Chamber of Commerce
+                </p>
+
+                <p>
+                    WDD 231 Web Frontend Development I
+                </p>
+
+                <p>
+                    Last Modification:
+                    <span id="lastModified"></span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
 
 </body>
+
 </html>
+```
