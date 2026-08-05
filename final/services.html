@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevConnect Solutions | Services</title>
+
+    <meta name="description"
+        content="Explore website development, software, mobile, API, database, cloud, and other digital services offered by DevConnect Solutions.">
+
+    <meta name="author" content="Byaruhanga Arthur">
+
+    <meta property="og:title" content="DevConnect Solutions | Services">
+    <meta property="og:description"
+        content="Explore software development and digital technology services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url"
+        content="https://byaruhanga649.github.io/wdd231/final/services.html">
+    <meta property="og:image"
+        content="https://byaruhanga649.github.io/wdd231/final/images/devconnect-social.svg">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/final-large.css">
+
+    <script type="module" src="scripts/services.js"></script>
+
+</head>
+
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a class="logo" href="index.html">
+                <span class="logo-mark">&lt;/&gt;</span>
+                <span>DevConnect</span>
+            </a>
+
+            <button class="menu-button" id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html">Home</a>
+                <a class="active" href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-banner">
+
+            <p class="eyebrow">OUR SERVICES</p>
+
+            <h1>Technology solutions for real needs</h1>
+
+            <p>
+                Explore our collection of software development and
+                digital technology solutions.
+            </p>
+
+        </section>
+
+
+        <section class="section services-section">
+
+            <div class="service-controls">
+
+                <div>
+
+                    <label for="category-filter">Filter by category</label>
+
+                    <select id="category-filter">
+                        <option value="all">All Services</option>
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label for="service-search">Search services</label>
+
+                    <input type="search"
+                        id="service-search"
+                        placeholder="Search services...">
+
+                </div>
+
+            </div>
+
+
+            <div id="services-container" class="service-grid">
+
+                <p class="loading-message">Loading services...</p>
+
+            </div>
+
+            <p id="service-status" class="service-status"></p>
+
+        </section>
+
+
+        <dialog id="service-modal" class="service-modal">
+
+            <div class="modal-content">
+
+                <button id="modal-close"
+                    class="modal-close"
+                    aria-label="Close service details">
+                    ×
+                </button>
+
+                <div id="modal-body"></div>
+
+            </div>
+
+        </dialog>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div>
+
+                <a class="footer-logo" href="index.html">
+                    &lt;/&gt; DevConnect Solutions
+                </a>
+
+                <p>
+                    Building practical digital solutions through
+                    creativity and technology.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Navigation</h3>
+
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Resources</h3>
+
+                <a href="attributions.html">Attributions</a>
+
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                    Project Video
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="current-year"></span> DevConnect Solutions
+            </p>
+
+            <p>
+                WDD 231 Individual Website Project
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

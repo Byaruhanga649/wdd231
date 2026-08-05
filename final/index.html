@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevConnect Solutions | Home</title>
+
+    <meta name="description"
+        content="DevConnect Solutions provides modern websites, software applications, APIs, and digital technology solutions.">
+
+    <meta name="author" content="Byaruhanga Arthur">
+
+    <meta property="og:title" content="DevConnect Solutions">
+    <meta property="og:description"
+        content="Modern software development and digital technology solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://byaruhanga649.github.io/wdd231/final/">
+    <meta property="og:image"
+        content="https://byaruhanga649.github.io/wdd231/final/images/devconnect-social.svg">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/final-large.css">
+
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a class="logo" href="index.html">
+                <span class="logo-mark">&lt;/&gt;</span>
+                <span>DevConnect</span>
+            </a>
+
+            <button class="menu-button" id="menu-button" aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <a class="active" href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">DIGITAL SOLUTIONS FOR A CONNECTED WORLD</p>
+
+                <h1>Build. Connect. <span>Grow.</span></h1>
+
+                <p>
+                    DevConnect Solutions creates modern websites, applications,
+                    APIs, and software systems that help individuals and
+                    organizations solve real-world problems.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a class="button primary-button" href="services.html">
+                        Explore Services
+                    </a>
+
+                    <a class="button secondary-button" href="contact.html">
+                        Start a Project
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-card">
+
+                <div class="code-window">
+
+                    <div class="window-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <pre><code>const solution = {
+    idea: "Your vision",
+    technology: "Modern",
+    result: "Growth"
+};
+
+build(solution);</code></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="stats-section">
+
+            <div class="stat">
+                <strong>15+</strong>
+                <span>Solutions</span>
+            </div>
+
+            <div class="stat">
+                <strong>8+</strong>
+                <span>Technologies</span>
+            </div>
+
+            <div class="stat">
+                <strong>100%</strong>
+                <span>Responsive</span>
+            </div>
+
+            <div class="stat">
+                <strong>24/7</strong>
+                <span>Ideas Welcome</span>
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">WHAT WE DO</p>
+
+                <h2>Technology that works for you</h2>
+
+                <p>
+                    We combine creativity, programming, and problem-solving
+                    to develop practical digital solutions.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">01</div>
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        Responsive and accessible websites designed for
+                        modern browsers and devices.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">02</div>
+
+                    <h3>Software Solutions</h3>
+
+                    <p>
+                        Custom software systems designed around specific
+                        business and organizational needs.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">03</div>
+
+                    <h3>Digital Innovation</h3>
+
+                    <p>
+                        Technology ideas that help organizations improve
+                        productivity and customer experiences.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="highlight-section">
+
+            <div>
+
+                <p class="eyebrow">WHY DEVCONNECT?</p>
+
+                <h2>Simple technology. Meaningful results.</h2>
+
+                <p>
+                    Every project begins with understanding the problem.
+                    We then select appropriate technologies and build a
+                    solution that is responsive, usable, and maintainable.
+                </p>
+
+                <a class="button primary-button" href="contact.html">
+                    Tell Us Your Idea
+                </a>
+
+            </div>
+
+
+            <div class="check-list">
+
+                <p>✓ Responsive design</p>
+                <p>✓ Accessible interfaces</p>
+                <p>✓ Modern JavaScript</p>
+                <p>✓ Scalable solutions</p>
+                <p>✓ User-focused development</p>
+
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">POPULAR SOLUTIONS</p>
+
+                <h2>Explore what we can build</h2>
+
+                <p>
+                    Browse some of the technology solutions available
+                    through DevConnect Solutions.
+                </p>
+
+            </div>
+
+            <div id="featured-services" class="service-grid"></div>
+
+            <div class="center-button">
+                <a class="button primary-button" href="services.html">
+                    View All Services
+                </a>
+            </div>
+
+        </section>
+
+
+        <dialog id="service-modal" class="service-modal">
+
+            <div class="modal-content">
+
+                <button id="modal-close" class="modal-close" aria-label="Close service details">
+                    ×
+                </button>
+
+                <div id="modal-body"></div>
+
+            </div>
+
+        </dialog>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div>
+
+                <a class="footer-logo" href="index.html">
+                    &lt;/&gt; DevConnect Solutions
+                </a>
+
+                <p>
+                    Building practical digital solutions through
+                    creativity and technology.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Navigation</h3>
+
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Resources</h3>
+
+                <a href="attributions.html">Attributions</a>
+
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                    Project Video
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="current-year"></span> DevConnect Solutions
+            </p>
+
+            <p>
+                WDD 231 Individual Website Project
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

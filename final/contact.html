@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevConnect Solutions | Contact</title>
+
+    <meta name="description"
+        content="Contact DevConnect Solutions about website development, software applications, APIs, databases, and other technology projects.">
+
+    <meta name="author" content="Byaruhanga Arthur">
+
+    <meta property="og:title" content="DevConnect Solutions | Contact">
+    <meta property="og:description"
+        content="Tell DevConnect Solutions about your next technology project.">
+    <meta property="og:type" content="website">
+    <meta property="og:url"
+        content="https://byaruhanga649.github.io/wdd231/final/contact.html">
+    <meta property="og:image"
+        content="https://byaruhanga649.github.io/wdd231/final/images/devconnect-social.svg">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="styles/final.css">
+    <link rel="stylesheet" href="styles/final-large.css">
+
+    <script type="module" src="scripts/main.js"></script>
+
+</head>
+
+
+<body>
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a class="logo" href="index.html">
+                <span class="logo-mark">&lt;/&gt;</span>
+                <span>DevConnect</span>
+            </a>
+
+            <button class="menu-button"
+                id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a class="active" href="contact.html">Contact</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-banner">
+
+            <p class="eyebrow">LET'S CONNECT</p>
+
+            <h1>Start your next project</h1>
+
+            <p>
+                Tell us about your idea and how technology can help
+                you achieve your goals.
+            </p>
+
+        </section>
+
+
+        <section class="section contact-section">
+
+            <div class="contact-info">
+
+                <p class="eyebrow">CONTACT DEVCONNECT</p>
+
+                <h2>Let's turn your idea into a solution.</h2>
+
+                <p>
+                    Complete the form and provide a few details about
+                    your project. Your information will be displayed
+                    on our confirmation page after submission.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <strong>Development</strong>
+
+                    <span>
+                        Websites, applications and custom software.
+                    </span>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>Technology</strong>
+
+                    <span>
+                        JavaScript, Python, C#, databases and APIs.
+                    </span>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>Approach</strong>
+
+                    <span>
+                        Simple, responsive and user-focused development.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <form class="contact-form"
+                action="form-action.html"
+                method="get">
+
+                <div class="form-group">
+
+                    <label for="name">Full Name *</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        autocomplete="name">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">Email Address *</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        autocomplete="email">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="service">Service Needed *</label>
+
+                    <select id="service"
+                        name="service"
+                        required>
+
+                        <option value="">Select a service</option>
+
+                        <option value="Web Development">
+                            Web Development
+                        </option>
+
+                        <option value="Mobile App Development">
+                            Mobile App Development
+                        </option>
+
+                        <option value="Custom Software">
+                            Custom Software
+                        </option>
+
+                        <option value="API Development">
+                            API Development
+                        </option>
+
+                        <option value="Database Development">
+                            Database Development
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="budget">Estimated Budget</label>
+
+                    <select id="budget" name="budget">
+
+                        <option value="Not decided">
+                            Not decided
+                        </option>
+
+                        <option value="Under $500">
+                            Under $500
+                        </option>
+
+                        <option value="$500 - $1,000">
+                            $500 - $1,000
+                        </option>
+
+                        <option value="$1,000 - $2,500">
+                            $1,000 - $2,500
+                        </option>
+
+                        <option value="Above $2,500">
+                            Above $2,500
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">Project Description *</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        required
+                        placeholder="Tell us about your project..."></textarea>
+
+                </div>
+
+
+                <label class="checkbox-label">
+
+                    <input
+                        type="checkbox"
+                        name="updates"
+                        value="yes">
+
+                    I would like to receive project updates.
+
+                </label>
+
+
+                <button class="button primary-button"
+                    type="submit">
+                    Submit Project Request
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div>
+
+                <a class="footer-logo" href="index.html">
+                    &lt;/&gt; DevConnect Solutions
+                </a>
+
+                <p>
+                    Building practical digital solutions through
+                    creativity and technology.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Navigation</h3>
+
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Resources</h3>
+
+                <a href="attributions.html">Attributions</a>
+
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+                    Project Video
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="current-year"></span> DevConnect Solutions
+            </p>
+
+            <p>
+                WDD 231 Individual Website Project
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
